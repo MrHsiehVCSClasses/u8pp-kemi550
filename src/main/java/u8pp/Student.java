@@ -49,6 +49,10 @@ public class Student {
         String last = Character.toString((char) ('A' + (int) (Math.random() * 26)));
         return new Student(year, first, last);
     }
+
+    public int compareTo(Student student) {
+        return 0;
+    }
 }
 
 class StudentSorter implements Comparator<Student> {
@@ -63,5 +67,4 @@ class StudentSorter implements Comparator<Student> {
         }
         return o1.getFirstName().compareTo(o2.getFirstName());
     }
-
 }
